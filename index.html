@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Calendar</title>
+    <style>
+        /* Styles for full height and centering using flexbox */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4; /* Optional: just to differentiate the background from the calendar */
+        }
+
+        /* Styles for the calendar container */
+        .ae-emd-cal {
+            width: 75vw;  /* 75% of the viewport width */
+            height: 75vh; /* 75% of the viewport height */
+            border: 1px solid #ccc; /* Optional: Just to see the container's boundary */
+            background-color: #fff; /* Optional: for better visualization */
+            overflow: auto; /* Allows scrolling if the content overflows the container */
+        }
+    </style>
+</head>
+<body>
+
+<!-- The provided embedded code -->
+<div class="ae-emd-cal" 
+     data-calendar="gD601685" 
+     data-calendars="gD601685-rH616259-Xi616258" 
+     data-calendars-selected="gD601685-rH616259-Xi616258" 
+     data-configure="true" 
+     data-title="Caterforce Calendar" 
+     data-title-show="true" 
+     data-today="true" 
+     data-datenav="true" 
+     data-date="true" 
+     data-monthweektoggle="true" 
+     data-subscribebtn="true" 
+     data-swimonth="true" 
+     data-swiweek="true" 
+     data-swischedule="true" 
+     data-print="true" 
+     data-timezone="true" 
+     data-defaultview="month" 
+     data-firstday="1" 
+     data-datetimeformat="2">
+</div>
+<script type="text/javascript">
+    (function(){
+        var e = document.createElement("script");
+        e.type = "text/javascript";
+        e.async = true;
+        e.src = "https://cdn.addevent.com/libs/cal/js/cal.embed.t1.init.js";
+        e.className = "ae-emd-script";
+        document.getElementsByTagName("body")[0].appendChild(e);
+    })();
+</script>
+
+</body>
+</html>
